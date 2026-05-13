@@ -1,0 +1,21 @@
+{
+  "name": "3d_portfolio",
+  "version": "1.0.0",
+  "description": "3D Portfolio Website",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubham-kesharwani7223/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Shubham Kesharwani",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

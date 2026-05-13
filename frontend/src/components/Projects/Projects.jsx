@@ -49,7 +49,7 @@ export const ProjectCard = ({
   );
 };
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects = [] }) => {
   return (
     <div className="projects">
       <Typography variant="h3">
@@ -57,22 +57,21 @@ const Projects = ({ projects }) => {
       </Typography>
 
       <div className="projectsWrapper">
-        {projects.map((item) => (
+        {projects?.map((item) => (
           <ProjectCard
-            id={item._id}
             key={item._id}
+            id={item._id}
             url={item.url}
-            projectImage={item.image.url}
+            projectImage={item?.image?.url}
             projectTitle={item.title}
             description={item.description}
             technologies={item.techStack}
           />
         ))}
       </div>
-
       <Typography variant="h3" style={{ font: "100 1.2rem 'Ubuntu Mono'" }}>
         All The Projects Shown Above Are Made By Me <FaRegSmileWink />
-      </Typography>
+       </Typography>
     </div>
   );
 };

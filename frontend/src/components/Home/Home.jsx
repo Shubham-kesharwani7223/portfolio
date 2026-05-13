@@ -11,7 +11,8 @@ import mern from "./mern.png";
 import react from "./react.png";
 import sql from "./sql.png";
 import web from "./web.jpg";
-import { Link, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import TimeLine from '../TimeLine/TimeLine';
 import {
   SiReact,
@@ -170,7 +171,20 @@ export const Home = () => {
 
     <div className="homeContainer">
       <Typography variant='h3'>TIMELINE</Typography>
-      <TimeLine timeline = {[1,2,3,4]}/>
+      <TimeLine
+        timelines={[
+          {
+            date: "2026",
+            title: "Portfolio Project",
+            description: "Created Full Stack Portfolio Website"
+          },
+          {
+            date: "2025",
+            title: "MERN Stack",
+            description: "Learned MERN Stack Development"
+          }
+        ]}
+      />
     </div>
 
     <div className="homeSkills">

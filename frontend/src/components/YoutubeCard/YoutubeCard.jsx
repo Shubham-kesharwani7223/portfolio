@@ -4,6 +4,7 @@ import { FaTrash } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { deleteYoutube, getUser } from "../../actions/user";
 import "./YoutubeCard.css";
+
 const YoutubeCard = ({
   url = "https://youtu.be/l1EssrLxt7E?si=EUh_ur_TppL1e5pt",
   title = "Title Here",
@@ -20,10 +21,19 @@ const YoutubeCard = ({
 
   return (
     <div className="youtubeCard">
-      <a href={url} target="blank">
+
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={image} alt="Video" />
-        <Typography>{title}</Typography>
+
+        <Typography>
+          {title}
+        </Typography>
       </a>
+
       {isAdmin && (
         <Button
           style={{
@@ -36,6 +46,7 @@ const YoutubeCard = ({
           <FaTrash />
         </Button>
       )}
+
     </div>
   );
 };
