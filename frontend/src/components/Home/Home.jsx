@@ -156,7 +156,7 @@ export const Home = () => {
       </Typography>
 
       <div className="homeCanvasBox">
-        <Typography variant="h2">DESIGNER</Typography>
+        <Typography variant="h2">SOFTWARE</Typography>
         <Typography variant="h2">DEVELOPER</Typography>
         {/* <Typography variant="h2">TEACHER</Typography>
         <Typography variant="h2">CONTENT CREATOR</Typography> */}
