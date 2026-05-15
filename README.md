@@ -43,38 +43,23 @@ interactive UI, animations, authentication system, contact functionality, and re
       Git & GitHub
 
 📂 Project Structure
-      3D_PORTFOLIO/
-      
+
+      3D_PORTFOLIO/      
       │
-      
       ├── backend/
-      
       │   ├── config/
-      
       │   ├── controller/
-      
       │   ├── middlewares/
-      
       │   ├── model/
-      
       │   ├── routes/
-      
       │   └── server.js
-      
       │
-      
       ├── frontend/
-      
       │   ├── public/
-      
       │   ├── src/
-      
       │   └── build/
-      
       │
-      
       ├── package.json
-      
       └── Procfile
 
 👨‍💻 Author
